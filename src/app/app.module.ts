@@ -6,8 +6,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent }  from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MembersComponent } from './members/members.component';
-import { PageNotFound } from './page-not-found/page-not-found.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { NewsComponent } from './news/news.component';
+import { PageNotFound } from './page-not-found/page-not-found.component';
 
 @NgModule({
   imports: [ 
@@ -31,6 +32,10 @@ import { GalleryComponent } from './gallery/gallery.component';
         component: GalleryComponent
       },
       {
+        path: 'news',
+        component: NewsComponent
+      },
+      {
         path: '**',
         component: PageNotFound
       }
@@ -41,6 +46,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     HomeComponent,
     MembersComponent,
     GalleryComponent,
+    NewsComponent,
     PageNotFound
   ],
   bootstrap:    [ AppComponent ]

@@ -12,8 +12,9 @@ var router_1 = require("@angular/router");
 var app_component_1 = require("./app.component");
 var home_component_1 = require("./home/home.component");
 var members_component_1 = require("./members/members.component");
-var page_not_found_component_1 = require("./page-not-found/page-not-found.component");
 var gallery_component_1 = require("./gallery/gallery.component");
+var news_component_1 = require("./news/news.component");
+var page_not_found_component_1 = require("./page-not-found/page-not-found.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -42,6 +43,10 @@ AppModule = __decorate([
                     component: gallery_component_1.GalleryComponent
                 },
                 {
+                    path: 'news',
+                    component: news_component_1.NewsComponent
+                },
+                {
                     path: '**',
                     component: page_not_found_component_1.PageNotFound
                 }
@@ -52,6 +57,7 @@ AppModule = __decorate([
             home_component_1.HomeComponent,
             members_component_1.MembersComponent,
             gallery_component_1.GalleryComponent,
+            news_component_1.NewsComponent,
             page_not_found_component_1.PageNotFound
         ],
         bootstrap: [app_component_1.AppComponent]
